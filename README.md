@@ -1,1 +1,6 @@
-# java-interfaces-refresher
+## java-interfaces-refresher
+
+```mermaid
+flowchart LR
+A --> B
+```
