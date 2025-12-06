@@ -33,3 +33,26 @@ classDiagram
     note for ExecutorService "Shutdown and await termination
                                -  close ()"                       
 ```
+
+### Future
+
+```mermaid
+classDiagram
+    class Future
+    <<interface>> Future
+    note for Future "Get Future.State
+                        - CANCELLED
+                        - FAILED
+                        - RUNNING
+                        - COMPLETE"
+    note for Future "Get the results or the exception
+                      - get()
+                      - get(long timeout, ..)
+                      - resultNow()
+                      - exceptionNow()"
+    note for Future "Cancel a yet-to-start/running task
+                      - cancel (boolean mayInterruptIfRunning)" 
+    note for Future "Check status of the task
+                      - isCancelled()
+                      - isDone()"
+```
